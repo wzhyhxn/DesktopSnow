@@ -1,6 +1,6 @@
 # ❄️ DesktopSnow (幽灵版)
 
-[🇨🇳 中文说明](README.zh-CN.md) | [🇺🇸 English (English)](README.md)
+[🇺🇸 English (English)](README.md)
 
 一个轻量级、全透明的 Windows 桌面下雪特效程序 (WPF)。
 
