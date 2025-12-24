@@ -1,6 +1,6 @@
 # ❄️ DesktopSnow (Ghost Edition)
 
-[🇨🇳 中文说明 (Chinese)](README.zh-CN.md) | 🇺🇸 English
+[🇨🇳 中文说明 (Chinese)](README.zh-CN.md)
 
 A lightweight, transparent Windows desktop snow effect application using WPF.
 
