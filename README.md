@@ -1,32 +1,38 @@
 # ❄️ DesktopSnow (Ghost Edition)
 
+[🇨🇳 中文说明 (Chinese)](README.zh-CN.md) | 🇺🇸 English
+
 A lightweight, transparent Windows desktop snow effect application using WPF.
-一个轻量级、全透明的 Windows 桌面下雪特效程序。
 
-## 👻 幽灵模式说明 (Ghost Mode)
+## 👻 Ghost Mode Explanation
 
-**注意 (Attention):** 此程序设计为 **“幽灵模式” (Ghost Mode)**。
-* 运行后 **任务栏没有图标** (No Taskbar Icon)。
-* 运行后 **托盘区没有图标** (No System Tray Icon)。
-* 它是完全隐形的，只在屏幕上下雪。
+**Attention:** This program is designed as **"Ghost Mode"**.
+* **No Taskbar Icon** when running.
+* **No System Tray Icon** when running.
+* It is completely invisible, only rendering snow on your screen.
 
-## 🎮 快捷键 (Controls)
+## 🎮 Controls
 
-由于没有界面，请务必记住以下控制键：
+Since there is no visible UI, please memorize these controls:
 
-| 按键 (Key) | 功能 (Function) | 说明 (Note) |
+| Key | Function | Note |
 | :--- | :--- | :--- |
-| **F9** | 开/关 雪花 (Toggle) | 也可以在 `config.txt` 中自定义 |
-| **F12** | **彻底退出 (Exit)** | **紧急停止键，按下即杀进程** |
+| **F9** | Toggle Snow | Can be customized in `config.txt` |
+| **F12** | **Emergency Exit** | **Instantly kills the process** |
 
-> 如果忘记快捷键，可以通过“任务管理器”结束 `DesktopSnow.exe` 进程。
+> If you forget the keys, use "Task Manager" to kill `DesktopSnow.exe`.
 
-## ⚙️ 配置 (Configuration)
+## ⚙️ Configuration
 
-在程序同目录下创建 `config.txt` 文件进行配置：
+Create a `config.txt` file in the same folder as the `.exe`:
 
 ```ini
-Mode=2            ; 1=按住显示, 2=切换显示(默认)
-StartupShow=true  ; true=启动即下雪, false=启动等待
-StartupDuration=5 ; 启动后自动下雪几秒钟
-Key=120           ; 快捷键代码 (120=F9)
+Mode=2            ; 1=Hold to show, 2=Toggle (Default)
+StartupShow=true  ; true=Snow on start, false=Wait for key
+StartupDuration=5 ; Duration of auto-snow on startup (seconds)
+Key=120           ; Key code for toggle (120=F9)
+
+🚀 Auto Start
+1. Create a shortcut of DesktopSnow.exe.
+2. Press Win + R, type shell:startup.
+3. Paste the shortcut into the folder.
