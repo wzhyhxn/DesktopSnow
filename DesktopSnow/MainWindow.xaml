@@ -1,0 +1,18 @@
+﻿<Window x:Class="DesktopSnow.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="DesktopSnow" 
+        Icon="snow.ico"
+        Height="450" Width="800"
+        WindowStyle="None" 
+        AllowsTransparency="True" 
+        Background="Transparent"
+        Topmost="True" 
+        ShowInTaskbar="False"
+        ResizeMode="NoResize"
+        IsHitTestVisible="False" 
+        Loaded="Window_Loaded">
+
+    <Canvas Name="SnowContainer">
+    </Canvas>
+</Window>
