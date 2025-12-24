@@ -31,7 +31,7 @@ Mode=2            ; 1=按住显示, 2=切换显示(默认)
 StartupShow=true  ; true=启动即下雪, false=启动等待
 StartupDuration=5 ; 启动后自动下雪几秒钟
 Key=120           ; 快捷键代码 (120=F9)
-
+```
 🚀 如何开机自启
 1. 生成 exe 的快捷方式。
 2. 按 Win + R 输入 shell:startup 打开启动文件夹。
