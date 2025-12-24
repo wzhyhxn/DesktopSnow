@@ -31,7 +31,7 @@ Mode=2            ; 1=Hold to show, 2=Toggle (Default)
 StartupShow=true  ; true=Snow on start, false=Wait for key
 StartupDuration=5 ; Duration of auto-snow on startup (seconds)
 Key=120           ; Key code for toggle (120=F9)
-
+```
 🚀 Auto Start
 1. Create a shortcut of DesktopSnow.exe.
 2. Press Win + R, type shell:startup.
