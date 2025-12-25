@@ -8,6 +8,7 @@
     <UseWPF>true</UseWPF>
 	<UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>snow.ico</ApplicationIcon>
+	<SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
   </PropertyGroup>
 
   <ItemGroup>

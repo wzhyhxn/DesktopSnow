@@ -121,9 +121,13 @@ namespace DesktopSnow
             _notifyIcon.Text = "桌面下雪 (Desktop Snow)";
             _notifyIcon.Visible = true;
 
-            if (File.Exists("snow.ico"))
+            // === [修改] 获取 exe 所在的真实路径(修复开机后不显示图标的bug) ===
+            string baseDir = AppDomain.CurrentDomain.BaseDirectory;
+            string iconPath = System.IO.Path.Combine(baseDir, "snow.ico");
+
+            if (File.Exists(iconPath)) //把相对路径"snow.ico"更改为新定义的iconPath
             {
-                _notifyIcon.Icon = new Drawing.Icon("snow.ico");
+                _notifyIcon.Icon = new Drawing.Icon(iconPath);
             }
             else
             {
@@ -191,7 +195,10 @@ namespace DesktopSnow
 
         private void LoadConfig()
         {
-            string configPath = "config.txt";
+            //string configPath = "config.txt";(相对路径开机自启动后会失效)
+            string baseDir = AppDomain.CurrentDomain.BaseDirectory;// 1. 获取程序运行的真实目录
+            string configPath = System.IO.Path.Combine(baseDir, "config.txt");// 2. 拼接出配置文件的完整路径
+
             if (File.Exists(configPath))
             {
                 try
