@@ -273,7 +273,7 @@ namespace DesktopSnow
         private void CreateSnowflake()
         {
             double size = _random.Next(2, 7);
-            // 简单优化：冻结画笔，节省一点点内存
+            // 简单优化：冻结画笔，节省一点内存
             var brush = new SolidColorBrush(Colors.White);
             Ellipse ellipse = new Ellipse
             {
